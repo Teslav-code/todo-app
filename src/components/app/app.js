@@ -19,7 +19,7 @@ export default class App  extends Component  {
     this.createTodoItem('Make Awesome App'),
     this.createTodoItem('Have a lunch'), ], 
     term: '',
-    filter: 'all' // active, all. done 
+    filter: 'all', // active, all. done 
   };
 
   createTodoItem(label) {
@@ -137,10 +137,13 @@ filter(items, filter) {
     const doneCount = todoData
                       .filter((el) => el.done ).length;
     const todoCount = todoData.length - doneCount;
+
+    const visibalItemsCount = visibalItems.length;
+
       return (
       <div className="todo-app">      
 
-      <AppHeader toDo={ todoCount } done={ doneCount }/>
+      <AppHeader toDo={ todoCount } done={ doneCount } search={ visibalItemsCount }/>
       <div className="top-panel d-flex">
         <SearchPanel 
           onSearchChange={this.onSearchChange} />

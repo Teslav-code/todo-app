@@ -143,7 +143,7 @@ filter(items, filter) {
       return (
       <div className="todo-app">      
 
-      <AppHeader toDo={ todoCount } done={ doneCount } search={ visibalItemsCount }/>
+      <AppHeader toDo={ todoCount } done={ doneCount } search={ visibalItemsCount } term={ term }/>
       <div className="top-panel d-flex">
         <SearchPanel 
           onSearchChange={this.onSearchChange} />

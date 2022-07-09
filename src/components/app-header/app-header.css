@@ -1,6 +1,6 @@
 .app-header {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .app-header h1 {
@@ -8,8 +8,12 @@
 }
 
 .app-header h2 {
-  margin-left: 4px;
+  margin-left: 15px;
   justify-content: flex-start;
   font-size: 1.2rem;
   color: grey;
+}
+
+.app-header h2.term {
+  display: none;
 }

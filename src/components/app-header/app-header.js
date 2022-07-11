@@ -8,16 +8,12 @@ export default class AppHeader extends Component {
 
     const{ toDo, done, search, count } = this.props;
 
-      console.log( search )
-
-
     let classNames = '.app-header h2 hidden'; 
        
        if (search) {
         classNames = classNames.replace(' hidden', '')
         } 
-
-        console.log('classNames',classNames )
+        
     return (
 
       <div className="app-header d-inline">

@@ -9,7 +9,6 @@ export default class ItemAddForm extends Component {
         label:''
     }; 
     
-
     onLabelChange = (e) => {
         this.setState({
             label: e.target.value
@@ -23,7 +22,6 @@ export default class ItemAddForm extends Component {
             label:''
         });
     };
-
 
     render() {
         return (

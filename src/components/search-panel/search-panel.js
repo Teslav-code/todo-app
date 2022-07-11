@@ -10,7 +10,6 @@ export default class SearchPanel extends Component {
 
   onSearchChange = (e) => {
     const term = e.target.value;
-    console.log(term)
     this.setState({ term });
     this.props.onSearchChange(term);
   }
